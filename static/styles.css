@@ -1,0 +1,146 @@
+/* Reseteo básico de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* 100% de la altura de la ventana */
+    margin: 0; /* Eliminar el margen por defecto */
+    padding: 0 10px; /* Añadir un pequeño padding lateral */
+}
+
+/* Header */
+header {
+    background-color: #000000; /* Fondo negro */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribuir el contenido a los extremos */
+    align-items: center; /* Centrar el contenido verticalmente */
+    color: white;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    position: fixed;
+    top: 0; /* Fija el header en la parte superior */
+    left: 0;
+    z-index: 10; /* Asegura que el header se mantenga arriba */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave debajo del header */
+}
+
+/* Logo */
+header .logo img {
+    height: 60px; /* Ajusta el tamaño del logo */
+    transition: transform 0.3s ease; /* Animación para un efecto de hover */
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 900px; /* Limita el tamaño máximo del contenido */
+    margin: 100px auto; /* Margen superior para que no se pegue al header */
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar todo el texto */
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+.container:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Efecto de hover para contenedor */
+    transform: translateY(-5px); /* Levitación al pasar el ratón */
+}
+
+/* Títulos */
+h1 {
+    color: #f38322;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2; /* Mejor control del espaciado */
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center; /* Centrar los elementos del formulario */
+    color: #444;
+    font-size: 18px;
+}
+
+/* Etiquetas */
+label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+input[type="text"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%; /* Asegura que el input ocupe todo el ancho del contenedor */
+    max-width: 450px; /* Limita el ancho máximo */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #f38322; /* Resaltar el borde al estar enfocado */
+    outline: none; /* Eliminar el borde azul de enfoque predeterminado */
+}
+
+/* Botón */
+button {
+    padding: 12px;
+    background-color: #66ad40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho del contenedor */
+    max-width: 450px; /* Limita el ancho máximo */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5e9935;
+    transform: translateY(-3px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+.sugerencia {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.sugerencia ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.sugerencia li {
+    margin-bottom: 10px; /* Espaciado entre productos */
+    font-size: 16px;
+}
